@@ -1,0 +1,122 @@
+.container {
+  max-width: 1170px;
+  padding-left: 25px;
+  padding-right: 25px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column; }
+
+body {
+  width: 100vw;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.42;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  position: relative; }
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  background: #ffffff; }
+
+*, *::before, *::after {
+  box-sizing: border-box; }
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+.header {
+  position: absolute;
+  width: 100vw;
+  padding-top: 20px; }
+  .header .header__container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%; }
+  .header .header__mail {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 24px;
+    transition: .3s; }
+    .header .header__mail:hover {
+      color: #FFA20D; }
+  .header .header__right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+    .header .header__right .right__tel {
+      text-decoration: none;
+      color: #ffffff;
+      font-size: 20px;
+      transition: .3s; }
+      .header .header__right .right__tel:hover {
+        color: #FFA20D; }
+    .header .header__right .right__callback {
+      background: none;
+      border: 1px solid #ffffff;
+      color: #ffffff;
+      font-size: 16px;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: .3s; }
+      .header .header__right .right__callback:hover {
+        color: #FFA20D;
+        border: 1px solid #FFA20D; }
+
+.hero {
+  background: url("../images/bg.png") center center no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw; }
+  .hero .hero__container {
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff; }
+  .hero .hero__title {
+    font-size: 48px;
+    text-align: center; }
+  .hero .hero__subtitle {
+    font-size: 24px;
+    margin-bottom: 50px; }
+    .hero .hero__subtitle .subtitle__color {
+      color: #FFA20D;
+      font-weight: bold; }
+  .hero .hero__form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%; }
+    .hero .hero__form .form__inp {
+      width: 23%;
+      background: none;
+      color: #ffffff;
+      border: 1px solid #ffffff;
+      border-radius: 10px;
+      font-size: 20px;
+      padding: 5px 10px; }
+    .hero .hero__form .form__btn {
+      width: 23%;
+      background: none;
+      color: #ffffff;
+      border: 1px solid #FFA20D;
+      border-radius: 10px;
+      font-size: 20px;
+      padding: 5px 10px;
+      color: #FFA20D;
+      cursor: pointer;
+      transition: .3s; }
+      .hero .hero__form .form__btn:hover {
+        color: #ffffff;
+        background: #FFA20D; }

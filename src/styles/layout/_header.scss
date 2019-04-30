@@ -1,0 +1,56 @@
+.header {
+    position: absolute;
+    width: 100vw;
+    padding-top: 20px;
+
+    .header__container {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+
+    .header__mail {
+        text-decoration: none;
+        color: #ffffff;
+        font-size: 24px;
+        transition: .3s;
+
+        &:hover {
+            color: $orange;
+        }
+    }
+
+    .header__right {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .right__tel {
+            text-decoration: none;
+            color: #ffffff;
+            font-size: 20px;
+            transition: .3s;
+
+            &:hover {
+                color: $orange;
+            }
+        }
+
+        .right__callback {
+            background: none;
+            border: 1px solid #ffffff;
+            color: #ffffff;
+            font-size: 16px;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: .3s;
+
+            &:hover {
+                color: $orange;
+                border: 1px solid $orange;
+            }
+        }
+    }
+}
