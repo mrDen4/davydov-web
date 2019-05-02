@@ -1,6 +1,11 @@
 $(document).ready(function () {
-    $('.content__slider').slick({
-        prevArrow: $('.btns__btn--l'),
-        nextArrow: $('.btns__btn--r')
+    $('.header .header__right .right__callback').on('click', function () {
+        $('.bg').toggleClass('bg--active');
+        $('.popup').toggleClass('popup--active');
+    });
+
+    $('.bg, .popup .popup__exit').on('click', function () {
+        $('.bg').removeClass('bg--active');
+        $('.popup').removeClass('popup--active');
     });
 });

@@ -1,0 +1,100 @@
+.popup {
+    position: fixed;
+    height: 400px;
+    width: 300px;
+    background: #ffffff;
+    top: -50%;
+    right: 50%;
+    margin-top: -200px;
+    margin-right: -150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    transition: .3s;
+    z-index: 50;
+
+    &--active {
+        top: 50%;
+    }
+
+    .popup__exit {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        border: none;
+        background: none;
+        color: $orange;
+        font-size: 24px;
+        transition: .3s;
+        cursor: pointer;
+
+        &:hover {
+            transform: rotate(180deg);
+        }
+    }
+
+    .popup_form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+
+        .form__title {
+            font-size: 26px;
+        }
+
+        .form__inp {
+            width: 90%;
+            background: none;
+            color: $orange;
+            border: 1px solid $orange;
+            border-radius: 10px;
+            font-size: 20px;
+            padding: 5px 10px;
+            transition: .3s;
+            outline: none;
+            margin-bottom: 10px;
+        }
+
+        .form__btn {
+            width: 90%;
+            background: none;
+            color: #ffffff;
+            border: 1px solid $orange;
+            border-radius: 10px;
+            font-size: 20px;
+            padding: 5px 10px;
+            color: $orange;
+            cursor: pointer;
+            transition: .3s;
+
+            @include tablets() {
+                width: 50%;
+            }
+
+            @include phones() {
+                width: 100%;
+            }
+
+            &:hover {
+                color: #ffffff;
+                background: $orange;
+            }
+        }
+    }
+}
+
+.bg {
+    position: fixed;
+    width: 100vw;
+    background: #000000;
+    opacity: .7;
+    height: 0;
+    top: 0;
+    transition: .3s;
+
+    &--active {
+        height: 100vh;
+    }
+}
