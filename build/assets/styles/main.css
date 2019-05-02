@@ -42,6 +42,9 @@ ul {
     justify-content: space-between;
     align-items: center;
     width: 100%; }
+    @media screen and (max-width: 576px) {
+      .header .header__container {
+        flex-direction: column; } }
   .header .header__mail {
     text-decoration: none;
     color: #ffffff;
@@ -49,6 +52,25 @@ ul {
     transition: .3s; }
     .header .header__mail:hover {
       color: #FFA20D; }
+    @media screen and (max-width: 768px) {
+      .header .header__mail {
+        font-size: 18px; } }
+    @media screen and (max-width: 576px) {
+      .header .header__mail {
+        margin-bottom: 10px; } }
+  .header .header__logo {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    @media screen and (max-width: 768px) {
+      .header .header__logo {
+        width: 35%; } }
+    @media screen and (max-width: 576px) {
+      .header .header__logo {
+        width: 100%;
+        order: -10; } }
+    .header .header__logo .logo__img {
+      width: 100%; }
   .header .header__right {
     display: flex;
     flex-direction: column;
@@ -61,6 +83,12 @@ ul {
       transition: .3s; }
       .header .header__right .right__tel:hover {
         color: #FFA20D; }
+      @media screen and (max-width: 768px) {
+        .header .header__right .right__tel {
+          font-size: 16px; } }
+      @media screen and (max-width: 576px) {
+        .header .header__right .right__tel {
+          margin-bottom: 10px; } }
     .header .header__right .right__callback {
       background: none;
       border: 1px solid #ffffff;
@@ -72,12 +100,19 @@ ul {
       .header .header__right .right__callback:hover {
         color: #FFA20D;
         border: 1px solid #FFA20D; }
+      @media screen and (max-width: 768px) {
+        .header .header__right .right__callback {
+          font-size: 14px; } }
 
 .hero {
   background: url("../images/bg.png") center center no-repeat;
   background-size: cover;
-  height: 100vh;
-  width: 100vw; }
+  min-height: 100vh;
+  width: 100vw;
+  padding-top: 200px; }
+  @media screen and (max-width: 768px) {
+    .hero {
+      padding-bottom: 20px; } }
   .hero .hero__container {
     height: 100%;
     width: 100%;
@@ -87,9 +122,18 @@ ul {
   .hero .hero__title {
     font-size: 48px;
     text-align: center; }
+    @media screen and (max-width: 576px) {
+      .hero .hero__title {
+        font-size: 35px;
+        margin-bottom: 10px; } }
   .hero .hero__subtitle {
     font-size: 24px;
     margin-bottom: 50px; }
+    @media screen and (max-width: 576px) {
+      .hero .hero__subtitle {
+        text-align: center;
+        margin-bottom: 25px;
+        font-size: 20px; } }
     .hero .hero__subtitle .subtitle__color {
       color: #FFA20D;
       font-weight: bold; }
@@ -98,6 +142,9 @@ ul {
     align-items: center;
     justify-content: space-between;
     width: 100%; }
+    @media screen and (max-width: 768px) {
+      .hero .hero__form {
+        flex-direction: column; } }
     .hero .hero__form .form__inp {
       width: 23%;
       background: none;
@@ -105,7 +152,21 @@ ul {
       border: 1px solid #ffffff;
       border-radius: 10px;
       font-size: 20px;
-      padding: 5px 10px; }
+      padding: 5px 10px;
+      transition: .3s;
+      outline: none; }
+      @media screen and (max-width: 768px) {
+        .hero .hero__form .form__inp {
+          width: 50%;
+          margin-bottom: 20px; } }
+      @media screen and (max-width: 576px) {
+        .hero .hero__form .form__inp {
+          width: 100%;
+          margin-bottom: 10px; } }
+      .hero .hero__form .form__inp:hover {
+        border: 1px solid #FFA20D; }
+      .hero .hero__form .form__inp:focus {
+        border: 1px solid #FFA20D; }
     .hero .hero__form .form__btn {
       width: 23%;
       background: none;
@@ -117,6 +178,12 @@ ul {
       color: #FFA20D;
       cursor: pointer;
       transition: .3s; }
+      @media screen and (max-width: 768px) {
+        .hero .hero__form .form__btn {
+          width: 50%; } }
+      @media screen and (max-width: 576px) {
+        .hero .hero__form .form__btn {
+          width: 100%; } }
       .hero .hero__form .form__btn:hover {
         color: #ffffff;
         background: #FFA20D; }
