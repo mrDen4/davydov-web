@@ -246,12 +246,6 @@ ul {
       color: #FFA20D;
       cursor: pointer;
       transition: .3s; }
-      @media screen and (max-width: 768px) {
-        .popup .popup_form .form__btn {
-          width: 50%; } }
-      @media screen and (max-width: 576px) {
-        .popup .popup_form .form__btn {
-          width: 100%; } }
       .popup .popup_form .form__btn:hover {
         color: #ffffff;
         background: #FFA20D; }

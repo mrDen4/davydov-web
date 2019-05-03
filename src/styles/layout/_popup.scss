@@ -69,14 +69,6 @@
             cursor: pointer;
             transition: .3s;
 
-            @include tablets() {
-                width: 50%;
-            }
-
-            @include phones() {
-                width: 100%;
-            }
-
             &:hover {
                 color: #ffffff;
                 background: $orange;
